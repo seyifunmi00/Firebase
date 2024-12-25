@@ -11,13 +11,20 @@ import {getFirestore } from "firebase/firestore"
 
 
 const firebaseConfig = {
- apiKey: "AIzaSyCRkTkf28l6qNOlsDDfpeUL5X_5d0dpO6I",
- authDomain: "fir-tutorial-db923.firebaseapp.com",
- projectId: "fir-tutorial-db923",
- storageBucket: "fir-tutorial-db923.firebasestorage.app",
- messagingSenderId: "301469809649",
- appId: "1:301469809649:web:95c77b0235e47ad85fe250",
- measurementId: "G-VZ35B2BNZD"
+ // eslint-disable-next-line no-undef
+ apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+ // eslint-disable-next-line no-undef
+ authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+ // eslint-disable-next-line no-undef
+ projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+ // eslint-disable-next-line no-undef
+ storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+ // eslint-disable-next-line no-undef
+ messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+ // eslint-disable-next-line no-undef
+ appId: process.env.REACT_APP_FIREBASE_APP_ID,
+ // eslint-disable-next-line no-undef
+ measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
