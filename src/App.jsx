@@ -127,3 +127,39 @@ function App() {
 }
 
 export default App
+
+
+
+
+
+//using smapshots this looks in the database to find out if it has changed and refetch the database
+
+
+
+// import { db } from "./firebase.js";
+// import { collection, onSnapshot } from "firebase/firestore";
+
+// const postCollection = collection(db, "posts");
+
+// export const subscribeToPosts = (callback) => {
+//  return onSnapshot(postCollection, (snapshot) => {
+//   const filteredData = snapshot.docs.map((doc) => ({
+//    ...doc.data(),
+//    id: doc.id,
+//   }));
+//   callback(filteredData); // Pass the data to the provided callback
+//  });
+// };
+
+
+
+
+// useEffect(() => {
+//   // Subscribe to real-time updates
+//   const unsubscribe = subscribeToPosts((data) => {
+//    setPosts(data);
+//   });
+
+//   // Cleanup listener on unmount
+//   return () => unsubscribe();
+//  }, []);
